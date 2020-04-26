@@ -36,58 +36,10 @@ function btnClick()
 </SCRIPT>
 </HEAD>
 <BODY bgcolor="green">
-<SCRIPT>
-setInterval(btnClick, 20000);
-</SCRIPT>
- <DIV align=center>
- <FORM name=frm1>
- <P>
- <INPUT type="button" value="Кнопка 1"
-         onClick="btnClick();">
- </FORM>
-<TABLE>
-<TR>
- <TD><IMG src="Pics/1_крыса.jpg"></TD>
- <TD>
-  <p id="inf">
-   Год - 1984<BR>
-  </p>
-  <p id="inf1">
-   Номер текущего цвета - 1 (green)<BR>
-  </p>
-  <p id="inf2">
-   номер изображения - 1 (1_крыса.jpg)
- </p>
- </TD>
-</TR>
-</TABLE>
-<P>
-<!-- послать e-mail с помощью JS-а нельзя! -->
- <FORM name=frm2>
-  <INPUT type="button" value="E-mail" onClick="btnClick();">
-  <P>E-mail
-  <INPUT type=text name=em size=30 value=petya@mail.ru>
-  <P>
-  <INPUT type="button" value="Переслать" onClick="btnClick();">
- </FORM>
-<form
-  action="https://formspree.io/FORM_ID"
-  method="POST"
->
-  <label>
-    Your Name:
-    <input type="text" name="name">
-  </label>
-  <label>
-    Your Email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Message:
-    <textarea name="message"></textarea>
-  </label>
-  <input type="submit" value="Send">
+<form action="send.php" method="post">
+<input type="text" name="fio" placeholder="Укажите ФИО">
+<input type="text" name="email" placeholder="Укажите e-mail">
+<input type="submit" value="Отправить">
 </form>
-</DIV>
 </BODY>
 </HTML>
