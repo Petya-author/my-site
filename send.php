@@ -10,8 +10,8 @@ $email = trim($email);
 //echo $fio;
 //echo "<br>";
 //echo $email;
-if (mail("example@mail.ru", "Çàÿâêà ñ ñàéòà", "ÔÈÎ:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n"))
- {     echo "ñîîáùåíèå óñïåøíî îòïðàâëåíî";
+if (mail("petyagavrikov@gmail.com", "Ð—Ð°ÑÐ²ÐºÐ° Ñ ÑÐ°Ð¹Ñ‚Ð°", "Ð¤Ð˜Ðž:".$fio.". E-mail: ".$email ,"From: petyagavrikov@gmail.com \r\n"))
+ {     echo "ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾";
 } else {
-    echo "ïðè îòïðàâêå ñîîáùåíèÿ âîçíèêëè îøèáêè";
+    echo "Ð¿Ñ€Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð½Ð¸ÐºÐ»Ð¸ Ð¾ÑˆÐ¸Ð±ÐºÐ¸";
 }?>
